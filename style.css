@@ -1,0 +1,53 @@
+/* BASE STYLES */
+:root {
+  --clr-dark: #4c7ade;
+  --clr-light: #c5ddf5;
+  --clr-accent: #dd4b6b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  word-spacing: 1.4px;
+  font-family: "Helvetica";
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.cont {
+  width: 80%;
+  height: 700px;
+  margin: 0 auto;
+  border: 15px solid var(--clr-dark);
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: #fb7185;
+  padding: 1em;
+  font-weight: 700;
+  color: var(--clr-light);
+  text-align: center;
+  border: 10px solid var(--clr-accent);
+  border-radius: 10px;
+}
+.cont {
+  display: flex;
+  /*flex-direction: row;*/ /* by default*/
+  /*flex-direction: column;*/ /* to display content horizantly*/
+  justify-content: center;
+  /*justify-content: space-between;*/ /* even space between content*/
+  /*justify-content: space-around;*/ /* add space to the margin*/
+  justify-content: space-evenly; /* space evenly between all items and margen*/
+}
